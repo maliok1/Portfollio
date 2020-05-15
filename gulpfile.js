@@ -38,7 +38,9 @@ function createStructure(done) {
  
     return done();
 }
- 
+gulp.task("heroku:production", function(){
+    console.log('hello'); // the task does not need to do anything.
+});
 // deletes all assets (HTML, fonts, images) in dist
 function cleanAssets(done) {
     return del(
