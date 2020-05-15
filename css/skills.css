@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0; }
+
+/* third section - skills */
+section.skills {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #E1E6EA;
+  height: 18em;
+  justify-content: space-around;
+  padding-left: 5%;
+  padding-right: 5%;
+  position: relative; }
+
+h2.skills {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  position: absolute;
+  align-self: baseline;
+  padding-top: 1em; }
+
+.skills img {
+  max-width: 51px;
+  min-width: 51px; }
+
+/*# sourceMappingURL=skills.css.map */

@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0; }
+
+/* Main section */
+main {
+  display: flex;
+  flex-direction: column; }
+
+section.home {
+  display: flex;
+  flex-direction: column;
+  background-image: url("/img/apple-2568755_1920.jpg");
+  width: 100%;
+  height: 40em;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.home h1 {
+  font-weight: lighter;
+  color: #4d4957;
+  font-size: 2em;
+  padding: 7rem 13rem; }
+
+/* Second section */
+section.paragraph {
+  display: flex;
+  background-color: #1d1c1f;
+  color: #E1E6EA;
+  height: 7em;
+  justify-content: center;
+  padding: 15% 15%;
+  align-items: center; }
+
+/*# sourceMappingURL=home.css.map */

@@ -8,7 +8,7 @@ const sass         = require('gulp-sass');
 const autoprefixer = require('gulp-autoprefixer');
 const csso         = require('gulp-csso');
 const sourcemaps   = require('gulp-sourcemaps');
-
+ 
 // creates default src folder structure
 function createStructure(done) {
     const folders = [
@@ -38,9 +38,7 @@ function createStructure(done) {
  
     return done();
 }
-gulp.task("heroku:production", function(){
-    console.log('hello'); // the task does not need to do anything.
-});
+ 
 // deletes all assets (HTML, fonts, images) in dist
 function cleanAssets(done) {
     return del(
