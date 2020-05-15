@@ -1,0 +1,37 @@
+/* width */
+::-webkit-scrollbar {
+  width: 25px;
+  height: 25px;
+ 
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $darkcolor;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $lightcolor;
+  border-radius: 30px;
+  box-shadow: inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0,0,0,.25);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:  $lightcolor;
+}
+
+@keyframes slidein{
+  from {
+    margin-left: 200%;
+  }
+
+  to {
+    margin-left: 0%;
+    
+  }
+}
+
+
+
