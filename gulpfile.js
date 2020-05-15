@@ -9,7 +9,6 @@ const autoprefixer = require('gulp-autoprefixer');
 const csso         = require('gulp-csso');
 const sourcemaps   = require('gulp-sourcemaps');
 
-var runSeq = require('run-sequence')
 // creates default src folder structure
 function createStructure(done) {
     const folders = [
@@ -140,6 +139,3 @@ exports.publish   = gulp.series(cleanAssets, publishHtml,  publishFonts, publish
 exports.build     = gulp.series(cleanAssets, publishHtmlProduction,  publishFonts, publishImages, compileScssProduction);
 exports.build_dev = gulp.series(cleanAssets, publishHtmlDevelopment, publishFonts, publishImages, compileScssDevelopment);
 exports.watch     = gulp.series(cleanAssets, publishHtmlDevelopment, publishFonts, publishImages, compileScssDevelopment, serve, watchFiles);
-gulp.task('heroku:production', function(){
-    runSeq('clean', 'build', 'minify')
-  })
