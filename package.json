@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon app.js",
-    "heroku-postbuild": "gulp build"
+    "start": "node app",
+    "postinstall": "gulp default" 
   },
   "author": "",
   "license": "ISC",
